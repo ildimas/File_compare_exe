@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/dropzone.min.js"></script>
+    <link rel="stylesheet" href="../css/dropzone.min.css" type="text/css" />
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+    <title>Eel app</title>
+      
+</head>
+<body>  
+    <div class="my_container">
+        <div class="my_inner-container">
+            <h1 class="main-font" id="myeel">Document comparer v1.0</h1>
+            <button id="mybtn">Get data</button>
+            <button id="sendbtn">Send data</button>
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="main-font">Before:</h1>
+                    <SECTION>
+                        <DIV id="dropzone">
+                          <FORM class="dropzone needsclick" id="before-upload">
+                            <DIV class="dz-message needsclick">    
+                              Drop files here or click to upload.<BR>
+                              <SPAN class="note needsclick">(This is just a demo dropzone. Selected 
+                              files are <STRONG>not</STRONG> actually uploaded.)</SPAN>
+                            </DIV>
+                           
+                          </FORM>
+                        </DIV>
+                      </SECTION>
+                </div>
+                <div class="col-md-6">
+                    <h1 class="main-font">After:</h1>
+                    <SECTION>
+                        <DIV id="dropzone">
+                          <FORM class="dropzone needsclick" id="after-upload">
+                            <DIV class="dz-message needsclick">    
+                              Drop files here or click to upload.<BR>
+                              <SPAN class="note needsclick">(This is just a demo dropzone. Selected 
+                              files are <STRONG>not</STRONG> actually uploaded.)</SPAN>
+                            </DIV>
+                           
+                          </FORM>
+                        </DIV>
+                      </SECTION>
+                </div> 
+            </div>
+            <div class="row mb-2">
+                <div class="row mt-2">
+                    <div class="col-md-12 text-center">
+                        <button type="button" class="btn btn-primary" id="CheckPathsButton">Start comparing</button>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col-md-12 text-center">
+                        <button type="button" class="btn btn-primary" id="DownloadFileButton">Download your compared document</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="../js/index.js"></script>
+</html>
